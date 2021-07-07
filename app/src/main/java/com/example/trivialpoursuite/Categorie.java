@@ -111,13 +111,13 @@ public class Categorie extends AppCompatActivity {
             list.add("Sport et loisirs");
             list.add("Histoire");
             list.add("Arts et litératures");
-            list.add("Divertisements");
+            list.add("Culture générale");
             list.add("geographie");
             list.add("science");
             list.add("sport");
             list.add("histoire");
             list.add("arts");
-            list.add("divertisements");
+            list.add("culture");
         }
 
         BtnText(list);
