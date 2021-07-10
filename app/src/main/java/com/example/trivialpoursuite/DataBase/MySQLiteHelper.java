@@ -7,7 +7,7 @@ import android.util.Log;
 
 public class MySQLiteHelper extends SQLiteOpenHelper {
     public MySQLiteHelper(Context context){
-        super(context,"Trivial.db",null,14);
+        super(context,"Trivial.db",null,15);
     }
 
     @Override

@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         try{
             ds.open();
             if(ds.readAllQuestion()==null){
-                init=new Initilize(ds);
+                init=new Initilize(ds,this);
                 init.all();
             }
             System.out.println("Ouverture de la DB OK");
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         if(ds.getQuestionsByGenre("Disney")==null){
             btnDisney.setEnabled(false);
         }
-        if(ds.getQuestionsByGenre("HarryP")==null){
+        if(ds.getQuestionsByGenre("Harry")==null){
             btnHP.setEnabled(false);
         }
     }
@@ -53,6 +53,26 @@ public class MainActivity extends AppCompatActivity {
     public void goToClassique(View v){
         Intent i=new Intent(MainActivity.this, Categorie.class);
         i.putExtra(GENRE,"Classique");
+        ds.close();
+        startActivity(i);
+    }
+
+    public void goToHarry(View v){
+        Intent i=new Intent(MainActivity.this, Categorie.class);
+        i.putExtra(GENRE,"Harry");
+        ds.close();
+        startActivity(i);
+    }
+
+    public void goToDisney(View v){
+        Intent i=new Intent(MainActivity.this, Categorie.class);
+        i.putExtra(GENRE,"Disney");
+        ds.close();
+        startActivity(i);
+    }
+
+    public void goToAdd(View v){
+        Intent i=new Intent(MainActivity.this, AddQuestion.class);
         ds.close();
         startActivity(i);
     }

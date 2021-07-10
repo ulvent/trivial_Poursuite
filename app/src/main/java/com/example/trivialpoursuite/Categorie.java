@@ -88,7 +88,7 @@ public class Categorie extends AppCompatActivity {
 
             case (R.id.btn6):
                 if(genre.equals("Classique")){
-                    goToDetail("divertisements");
+                    goToDetail("culture");
                 }
                 break;
         }
@@ -113,6 +113,32 @@ public class Categorie extends AppCompatActivity {
             list.add("Arts et litératures");
             list.add("Culture générale");
             list.add("geographie");
+            list.add("science");
+            list.add("sport");
+            list.add("histoire");
+            list.add("arts");
+            list.add("culture");
+        }else if(genre.equals("Harry")){
+            list.add("Poudlard");
+            list.add("Animaux et créature magiques");
+            list.add("Objets magiques");
+            list.add("Personnages");
+            list.add("Magie noire");
+            list.add("Sortilèges et potions");
+            list.add("poudlard");
+            list.add("animaux");
+            list.add("objets");
+            list.add("personnages");
+            list.add("noire");
+            list.add("sorts");
+        }else if(genre.equals("Disney")){
+            list.add("Personnages");
+            list.add("Personnages");
+            list.add("Films");
+            list.add("Science");
+            list.add("Nature et animaux");
+            list.add("Culture générale");
+            list.add("personnage");
             list.add("science");
             list.add("sport");
             list.add("histoire");

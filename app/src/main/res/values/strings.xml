@@ -1,3 +1,36 @@
 <resources>
     <string name="app_name">trivial Pursuite</string>
+    <string-array name="theme">
+        <item>Classique</item>
+        <item>Disney</item>
+        <item>Harry Potter</item>
+    </string-array>
+
+    <string-array name="catClass">
+        <item>Géographie</item>
+        <item>Science et nature</item>
+        <item>Sport et loisir</item>
+        <item>Histoire</item>
+        <item>Arts et littératures</item>
+        <item>Culture générale</item>
+    </string-array>
+
+    <string-array name="catHarry">
+        <item>Poudlard</item>
+        <item>Animaux et créature magiques</item>
+        <item>Objets magiques</item>
+        <item>Personnages</item>
+        <item>Magie noire</item>
+        <item>Sortilèges et potions</item>
+    </string-array>
+
+    <string-array name="catDisney">
+        <item>avenir</item>
+        <item>avenir</item>
+        <item>avenir</item>
+        <item>avenir</item>
+        <item>avenir</item>
+        <item>avenir</item>
+        <item>avenir</item>
+    </string-array>
 </resources>

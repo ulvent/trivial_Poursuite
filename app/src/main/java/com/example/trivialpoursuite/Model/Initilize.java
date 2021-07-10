@@ -1,12 +1,20 @@
 package com.example.trivialpoursuite.Model;
 
+import android.content.Context;
+import android.widget.Toast;
+
 import com.example.trivialpoursuite.DataBase.DataSource;
+
+import java.io.IOException;
+import java.io.OutputStreamWriter;
 
 public class Initilize {
     private DataSource ds;
-    public Initilize(DataSource ds){
+    private Context context;
+    public Initilize(DataSource ds, Context context){
         this.ds=ds;
         ds.open();
+        this.context=context;
     }
 
     public void all(){

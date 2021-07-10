@@ -49,8 +49,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:backgroundTint="@color/nightBlue"
-            android:text="Disney"
             android:fontFamily="cursive"
+            android:onClick="goToDisney"
+            android:text="Disney"
             android:textStyle="bold" />
 
     </LinearLayout>
@@ -68,16 +69,18 @@
 
             android:backgroundTint="@color/goldRod"
             android:fontFamily="cursive"
+            android:onClick="goToHarry"
             android:text="Harry potter"
             android:textStyle="bold" />
     </LinearLayout>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="cursive"
-        android:onClick="updateDB"
-        android:text="Update DB" />
+        android:onClick="goToAdd"
+        android:text="Ajouter une question"
+        android:textStyle="bold" />
 
 </LinearLayout>
